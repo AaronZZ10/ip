@@ -111,7 +111,7 @@ public class Taylor {
             if(input.startsWith("deadline")){
                 int by = input.indexOf("/by");
                 String description = input.substring(9,by); // Extract the task description
-                String _by = input.substring(by+4); // Extract the deadline
+                String _by = input.substring(by+4);
                 Task task = new Deadline(description,_by); // Create a new Deadline object
                 tasks.add(task); // Add the deadline task to the list
                 System.out.println(line);
