@@ -134,7 +134,7 @@ public class Taylor {
         int to = input.indexOf("/to"); // Get the position of "/to"
         String description = input.substring(6, from); // Extract task description
         String _from = input.substring(from + 6, to); // Extract event start time
-        String _to = input.substring(to + 4); // Extract event end time
+        String _to = input.substring(to + 4);
         return new Event(description, _from, _to);
     }
 
