@@ -69,7 +69,7 @@ public class Taylor {
                 try {
                     tasks.unmarkTask(index);
                     System.out.println("OK, I've marked this task as not done yet:");
-                    System.out.println(tasks.get(index)); // Display the task marked as not done
+                    System.out.println(tasks.get(index));
                     System.out.println(line);
                 } catch (IndexOutOfBoundsException e) {
                     printInvalidIndex();
